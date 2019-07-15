@@ -11,7 +11,7 @@ function logProps(Component) {
 
       // Assign the custom prop "forwardedRef" as a ref
       // highlight-next-line
-      return <Component ref={forwardedRef} {...rest} />;
+      return <Component innerRef={forwardedRef} {...rest} />;
     }
   }
 
